@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM python:3.6
 MAINTAINER Phusion <info@phusion.nl>
 
 COPY . /bd_build
