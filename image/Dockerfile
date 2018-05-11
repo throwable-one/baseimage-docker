@@ -15,6 +15,7 @@ ENV DEBIAN_FRONTEND="teletype" \
 
 
 # Generate locale
-RUN echo en_US.UTF-8 | dpkg-reconfigure locales
+RUN echo en_US.UTF-8 ru_RU.UTF-8 | dpkg-reconfigure locales
+RUN locale-gen
 
 CMD ["/sbin/my_init"]
