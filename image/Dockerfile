@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.6.8-stretch
 MAINTAINER Phusion <info@phusion.nl>
 
 COPY . /bd_build
