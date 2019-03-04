@@ -39,6 +39,6 @@ $minimal_apt_get_install software-properties-common
 
 ## Upgrade all packages.
 apt-get dist-upgrade -y --no-install-recommends -o Dpkg::Options::="--force-confold"
-apt-get install locales
+apt-get install locales -y
 
 
