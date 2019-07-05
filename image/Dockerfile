@@ -1,6 +1,9 @@
 FROM python:3.6.8-stretch
 MAINTAINER Phusion <info@phusion.nl>
 
+ARG QEMU_ARCH
+ADD x86_64_qemu-${QEMU_ARCH}-static.tar.gz /usr/bin
+
 COPY . /bd_build
 
 RUN /bd_build/prepare.sh && \
